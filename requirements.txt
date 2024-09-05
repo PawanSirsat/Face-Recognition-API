@@ -2,12 +2,9 @@ deepface==0.0.93
 mtcnn==0.1.1
 opencv-python==4.10.0.84
 numpy==1.26.4
-tensorflow==2.17.0
-keras==3.5.0
+tensorflow==2.17.0  # Keep this version
+keras==3.5.0        # Compatible with TensorFlow 2.17.0
 pandas==2.2.2
 scikit-learn==1.5.0
 Flask==3.0.3
 Flask-Cors==4.0.1
-tf-keras==2.3.0
-tensorflow==2.3.0
-
