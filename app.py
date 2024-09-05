@@ -4,7 +4,6 @@ import requests
 import numpy as np
 import cv2
 from deepface import DeepFace
-import os  # Add this to access environment variables
 
 app = Flask(__name__)
 
@@ -76,5 +75,5 @@ def match_faces_endpoint():
     return jsonify({'matched_image_urls': matched_urls})
 
 if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 10000))  # Use the environment variable for the port
+    port = 10000  # Set the port directly
     app.run(debug=True, host="0.0.0.0", port=port)  # Bind to all interfaces
